@@ -1,0 +1,14 @@
+// Version 1 MAJOR 0 MINOR 0 PATCH proto-dev-region
+// Copyright © 2022-2023 Dell Inc. or its subsidiaries. All Rights Reserved. Dell Technologies, Dell and other trademarks are trademarks of Dell Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.
+
+syntax = "proto3";
+
+package deviceinfo;
+
+// Region information for a device
+message DeviceRegion {
+  string device_id = 1; // Unique identifier for the device
+  string region = 2; // Region where the device is located
+  string description = 3; // Optional description of the region
+  int64 last_updated = 4; // Timestamp when the region information was last updated
+}
